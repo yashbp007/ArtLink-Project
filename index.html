@@ -1,144 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArtLink - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtLink</title>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Using FontAwesome for icons as placeholder -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <div class="app-container">
-        <!-- Header / Top Bar for Mobile -->
-        <header class="mobile-header">
-            <div class="brand">ARTLINK</div>
-            <div class="mobile-actions">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-paper-plane"></i>
-            </div>
-        </header>
-
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="brand-logo">ARTLINK</div>
-            <nav class="nav-menu">
-                <a href="#" class="nav-item active">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
-                </a>
-                <a href="explore.html" class="nav-item">
-                    <i class="fa-regular fa-compass"></i>
-                    <span>Explore</span>
-                </a>
-                <a href="create.html" class="nav-item">
-                    <i class="fa-regular fa-square-plus"></i>
-                    <span>Create</span>
-                </a>
-                <a href="profile.html" class="nav-item">
-                    <i class="fa-regular fa-user"></i>
-                    <span>Profile</span>
-                </a>
-            </nav>
-
-            <div class="sidebar-section">
-                <h3>Your Community</h3>
-                <ul class="community-list">
-                    <li>
-                        <img src="https://ui-avatars.com/api/?name=C1&background=random" alt="C1">
-                        <span>Community 1</span>
-                        <span class="dot"></span>
-                    </li>
-                    <li>
-                        <img src="https://ui-avatars.com/api/?name=CX&background=random" alt="CX">
-                        <span>Community xyz...</span>
-                    </li>
-                    <li>
-                        <img src="https://ui-avatars.com/api/?name=C2&background=random" alt="C2">
-                        <span>Community 2</span>
-                        <span class="dot"></span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Suggested Community</h3>
-                <ul class="community-list">
-                    <li>
-                        <img src="https://ui-avatars.com/api/?name=C1&background=random" alt="C1">
-                        <span>Community 1</span>
-                    </li>
-                    <li>
-                        <img src="https://ui-avatars.com/api/?name=C2&background=random" alt="C2">
-                        <span>Community 2</span>
-                    </li>
-                    <li>
-                        <img src="https://ui-avatars.com/api/?name=C3&background=random" alt="C3">
-                        <span>Community 3</span>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
-        <!-- Main Feed -->
-        <main class="main-feed">
-            <div class="search-bar-container">
-                <div class="search-bar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search for art or artist">
-                </div>
-                <div class="top-actions">
-                    <button id="toggleSuggestionsBtn" class="icon-btn" title="Toggle Suggestions">
-                        <i class="fa-solid fa-users"></i>
-                    </button>
-                    <i class="fa-regular fa-bell"></i>
-                    <i class="fa-regular fa-paper-plane"></i>
-                    <img src="https://ui-avatars.com/api/?name=User&background=008080&color=fff" alt="Profile" class="user-avatar-sm">
-                </div>
-            </div>
-
-            <!-- Stories -->
-            <div class="stories-container"></div>
-
-
-        </main>
-
-        <!-- Right Sidebar -->
-        <aside class="right-sidebar">
-            <div class="suggestions-header">
-                <h3>Suggested for you</h3>
-            </div>
-            <div class="suggestion-list"></div>
-            
-            <div class="footer-links">
-                About Help API Privacy Terms Locations Language
-                <br>
-                © 2025 ArtLink
-            </div>
-        </aside>
-    </div>
-    <!-- Story Viewer Modal -->
-    <div id="storyModal" class="story-modal">
-        <div class="story-progress-container">
-            <div class="story-progress-bar"></div>
-        </div>
-        <div class="story-header">
-            <div class="story-user-info">
-                <img src="" alt="User" id="storyUserAvatar">
-                <span id="storyUserName"></span>
-                <span class="story-time">12h</span>
-            </div>
-            <button id="closeStoryBtn">&times;</button>
-        </div>
-        <div class="story-content-area">
-            <img src="" alt="Story" id="storyImage">
-        </div>
-        <div class="story-nav prev" id="prevStoryBtn"><i class="fa-solid fa-chevron-left"></i></div>
-        <div class="story-nav next" id="nextStoryBtn"><i class="fa-solid fa-chevron-right"></i></div>
-    </div>
-
-    <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
