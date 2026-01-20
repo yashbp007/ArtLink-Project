@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtLink - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand-logo">ARTLINK</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="explore.html" class="nav-item">
+                    <i class="fa-regular fa-compass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="create.html" class="nav-item">
+                    <i class="fa-regular fa-square-plus"></i>
+                    <span>Create</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+            <div class="profile-header">
+                <div class="profile-cover"></div>
+                <div class="profile-info-container">
+                    <div class="profile-avatar-large">
+                        <img src="https://ui-avatars.com/api/?name=User&background=008080&color=fff&size=150" alt="Profile" class="profile-avatar-img">
+                    </div>
+                    <div class="profile-details">
+                        <div class="profile-name-row">
+                            <h1 class="profile-name">User_063</h1>
+                            <button class="btn btn-outline btn-sm">Edit Profile</button>
+                            <button id="themeToggle" class="btn btn-outline btn-sm" style="margin-left: 8px;">
+                                <i class="fa-regular fa-moon"></i>
+                            </button>
+                        </div>
+                        <div class="profile-handle" style="color: #666; font-size: 14px; margin-bottom: 8px;">@user063</div>
+                        <div class="profile-stats">
+                            <span class="stat-item"><strong class="stat-value">0</strong> posts</span>
+                            <span class="stat-item"><strong class="stat-value">0</strong> followers</span>
+                            <span class="stat-item"><strong class="stat-value">0</strong> following</span>
+                        </div>
+                        <div class="profile-bio">
+                            <p>Loading bio...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-tabs">
+                <div class="profile-tab active"><i class="fa-solid fa-table-cells"></i> Posts</div>
+                <div class="profile-tab"><i class="fa-regular fa-bookmark"></i> Saved</div>
+            </div>
+
+            <div class="profile-posts-grid masonry-grid">
+                <!-- Posts will be injected here -->
+            </div>
+        </main>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

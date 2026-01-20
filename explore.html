@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtLink - Explore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar (Same as Home) -->
+        <aside class="sidebar">
+            <div class="brand-logo">ARTLINK</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fa-regular fa-compass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="create.html" class="nav-item">
+                    <i class="fa-regular fa-square-plus"></i>
+                    <span>Create</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-section">
+                <h3>Your Community</h3>
+                <ul class="community-list">
+                    <li>
+                        <img src="https://ui-avatars.com/api/?name=C1&background=random" alt="C1">
+                        <span>Community 1</span>
+                        <span class="dot"></span>
+                    </li>
+                    <li>
+                        <img src="https://ui-avatars.com/api/?name=CX&background=random" alt="CX">
+                        <span>Community xyz...</span>
+                    </li>
+                    <li>
+                        <img src="https://ui-avatars.com/api/?name=C2&background=random" alt="C2">
+                        <span>Community 2</span>
+                        <span class="dot"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Suggested Community</h3>
+                <ul class="community-list">
+                    <li>
+                        <img src="https://ui-avatars.com/api/?name=C1&background=random" alt="C1">
+                        <span>Community 1</span>
+                    </li>
+                    <li>
+                        <img src="https://ui-avatars.com/api/?name=C2&background=random" alt="C2">
+                        <span>Community 2</span>
+                    </li>
+                    <li>
+                        <img src="https://ui-avatars.com/api/?name=C3&background=random" alt="C3">
+                        <span>Community 3</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="explore-main">
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for art or artist">
+                </div>
+                <div class="top-actions">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <img src="https://ui-avatars.com/api/?name=User&background=008080&color=fff" alt="Profile" class="user-avatar-sm">
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs-container">
+                <button class="tab-btn active">All</button>
+                <button class="tab-btn">Dance</button>
+                <button class="tab-btn">Singing/Rap</button>
+                <button class="tab-btn">Visual Art</button>
+                <button class="tab-btn">Digital Art</button>
+                <button class="tab-btn">Literature</button>
+                <button class="tab-btn">Media Art</button>
+            </div>
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid">
+
+            </div>
+        </main>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

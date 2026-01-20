@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtLink - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-image">
+                <img src="assets/login_art.png" alt="Artistic Portrait">
+            </div>
+            <div class="login-form-section">
+                <div class="login-header">
+                    <div class="brand">ARTLINK</div>
+                    <div class="language-selector">
+                        <span>🇺🇸 en</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="welcome-text">
+                    <h1>Hi Artist!</h1>
+                    <p>Welcome to ArtLink</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="input-group">
+                        <input type="email" class="input-field" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="input-field" placeholder="Password" required>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+
+                    <button type="button" class="btn btn-outline google-btn">
+                        Login with G <span class="google-icon">G</span>
+                    </button>
+
+                    <button type="submit" class="btn btn-primary login-btn">Login</button>
+
+                    <div class="signup-link">
+                        Don't have an account? <a href="signup.html">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
